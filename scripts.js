@@ -11,7 +11,7 @@ function loadFileInto(fromFile, whereTo) {
 	// provides code to do something in response to the AJAX request
 	ajax.onreadystatechange = function() {
 			if ((this.readyState == 4) && (this.status == 200)) {
-				document.querySelector(whereTo).innerHTML += this.responseText;
+				document.querySelector(whereTo).innerHTML = this.responseText;
 				
 			} else if ((this.readyState == 4) && (this.status != 200)) {
 				console.log("Error: " + this.responseText);
