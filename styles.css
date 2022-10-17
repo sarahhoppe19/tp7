@@ -23,6 +23,8 @@ body {
 
 #recipeBanner {
   position: relative;
+  margin: 0;
+  padding-top: 0;
   width: 100%;
   height: 50vh;
   background-image: none;  /*url(chiliPhoto2.jpg);*/
@@ -71,19 +73,6 @@ body {
   margin: 10px;
   margin-bottom: 10px;
   font-size: 20px;
-}
-
-/*Hides the columns at first; will use javascript to make it undoable*/
-#recipeColumns #ingredients ul,
-#recipeColumns #equipment ul,
-#recipeColumns #directions ol {
-  display: none;
-}
-
-#recipeColumns #ingredients.tpShow ul,
-#recipeColumns #equipment.tpShow ul,
-#recipeColumns #directions.tpShow ol {
-  display: block;
 }
 
 ol {
